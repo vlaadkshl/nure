@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ХНУРЕ</title>
+</head>
+<body class="home">
+    <header class="header">
+        <div class="container">
+            <div class="header-block header-info">
+                <div class="header-info-links">
+                    <a href="https://goo.gl/maps/DW3kgzwi5QHqJytk8" class="header-info-link header-info-link-wicons">
+                        <span class="material-icons-outlined">place</span>
+                        <span class="link-text">м. Харків, пр. Науки, 14</span>
+                    </a>
+                    <a href="mailto:info@nure.ua" class="header-info-link header-info-link-wicons">
+                        <span class="material-icons-outlined">email</span>
+                        <span class="link-text">info@nure.ua</span>
+                    </a>
+                </div>
+                <div class="header-info-links">
+                    <div class="header-info-languages">
+                        <a href="" class="header-info-lang header-info-link header-info-lang-active">UA</a>
+                        <a href="" class="header-info-lang header-info-link">RU</a>
+                        <a href="" class="header-info-lang header-info-link">EN</a>
+                    </div>
+                    <a href="#" class="header-info-link header-info-contacts">Контакти</a>
+                    <button class="search-btn">
+                        <svg class="search-btn-icon search-btn-icon-search search-btn-icon-active" width="20" height="21" fill="none">
+                            <g clip-path="url(#a)">
+                                <path d="M14.6772 13.4307A8.1252 8.1252 0 0 0 7.8107.5091a8.125 8.125 0 1 0 5.1202 14.6691h-.0012c.0375.05.0775.0975.1225.1438l4.8125 4.8125a1.2506 1.2506 0 0 0 1.7681.0006 1.2506 1.2506 0 0 0 .0006-1.7681l-4.8125-4.8125a1.246 1.246 0 0 0-.1437-.125v.0012Zm.3225-4.805a6.8757 6.8757 0 0 1-4.2441 6.3517 6.875 6.875 0 1 1 4.2441-6.3517Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" transform="translate(0 .5)" d="M0 0h20v20H0z"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="search-btn-icon search-btn-icon-close material-icons-outlined">close</span>
+                    </button>
+                </div>
+            </div>
+            <form action="GET" class="header-search header-form">
+                <input type="text" class="header-search_input" placeholder="Пошук по сайту" name="header-search_input">
+                <button class="header-search_submit">
+                    <svg class="search-icon" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </form>
+            <div class="header-block header-main">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="ХНУРЕ">
+                    <div class="logo_text">
+                        <span class="logo_text-top">ХНУРЕ</span>
+                        <span class="logo_text-bottom">Харківський національний університет радіоелектроніки</span>
+                    </div>
+                </a>
+                <button class="header-nav-btn">
+                    <span class="material-icons-outlined header-nav-btn-icon-menu header-nav-btn-icon-active">menu</span>
+                    <span class="material-icons-outlined header-nav-btn-icon-close">close</span>
+                </button>
+                <nav class="header-nav">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span>Університет</span>
+                                <span class="material-icons-outlined">arrow_downward</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">
+                                    Приймальна комісія
+                                </a></li>
+                                <li><a href="#">
+                                    Правила прийому 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Вступна кампанія 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (бакалавр, магістр)
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (доктор філософії)
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span>Абітурієнтам</span>
+                                <span class="material-icons-outlined">arrow_downward</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">
+                                    Приймальна комісія
+                                </a></li>
+                                <li><a href="#">
+                                    Правила прийому 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Вступна кампанія 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (бакалавр, магістр)
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (доктор філософії)
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span>Студентам</span>
+                                <span class="material-icons-outlined">arrow_downward</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">
+                                    Приймальна комісія
+                                </a></li>
+                                <li><a href="#">
+                                    Правила прийому 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Вступна кампанія 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (бакалавр, магістр)
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (доктор філософії)
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span>Наука</span>
+                                <span class="material-icons-outlined">arrow_downward</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">
+                                    Приймальна комісія
+                                </a></li>
+                                <li><a href="#">
+                                    Правила прийому 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Вступна кампанія 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (бакалавр, магістр)
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (доктор філософії)
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span>Освіта</span>
+                                <span class="material-icons-outlined">arrow_downward</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">
+                                    Приймальна комісія
+                                </a></li>
+                                <li><a href="#">
+                                    Правила прийому 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Вступна кампанія 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (бакалавр, магістр)
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (доктор філософії)
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">
+                                <span>Прес-центр</span>
+                                <span class="material-icons-outlined">arrow_downward</span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="#">
+                                    Приймальна комісія
+                                </a></li>
+                                <li><a href="#">
+                                    Правила прийому 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Вступна кампанія 2021
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (бакалавр, магістр)
+                                </a></li>
+                                <li><a href="#">
+                                    Спеціальності (доктор філософії)
+                                </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="home-first">
+        <section class="home-first-hero">
+            <div class="home-first-hero_info">
+                <div class="swiper home-first-hero_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="home-first-hero_title"> центри "Крим-Україна" та "Донбас-Україна"</p>
+                            <p class="home-first-hero_description">Для організації вступу до закладів вищої, фахової передвищої та професійної (професійно-технічної) освіти через освітні центри «Донбас-Україна» та «Крим-Україна» МОН України затверджено Порядок...</p>
+                            <div class="home-first-hero_btns">
+                                <a href="#" class="home-first-hero_more">Детальніше</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="home-first-hero_title">Освітні центри "Крим-Україна" та "Донбас-Україна"</p>
+                            <p class="home-first-hero_description">Для організації вступу до закладів вищої, фахової передвищої та професійної (професійно-технічної) освіти через освітні центри «Донбас-Україна» та «Крим-Україна» МОН України затверджено Порядок...</p>
+                            <div class="home-first-hero_btns">
+                                <a href="#" class="home-first-hero_more">Детальніше</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="home-first-hero_title">Освітні центри "Крим-Україна" та "Донбас-Україна"</p>
+                            <p class="home-first-hero_description">Для організації вступу до закладів вищої, фахової передвищої та професійної (професійно-технічної) освіти через освітні центри «Донбас-Україна» та «Крим-Україна» МОН України затверджено Порядок...</p>
+                            <div class="home-first-hero_btns">
+                                <a href="#" class="home-first-hero_more">Детальніше</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="home-first-hero_title">Освітні центри "Крим-Україна" та "Донбас-Україна"</p>
+                            <p class="home-first-hero_description">Для організації вступу до закладів вищої, фахової передвищої та професійної (професійно-технічної) освіти через освітні центри «Донбас-Україна» та «Крим-Україна» МОН України затверджено Порядок...</p>
+                            <div class="home-first-hero_btns">
+                                <a href="#" class="home-first-hero_more">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-first-hero_navigation">
+                    <button class="home-first-hero_navigation-btn home-first_navigation-previous">
+                        <svg height="20px" viewBox="0 0 20 21" fill="#00465F" >
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 10.5003C18.75 10.3345 18.6842 10.1755 18.567 10.0583C18.4497 9.94112 18.2908 9.87527 18.125 9.87527H3.38377L7.31752 5.94277C7.37563 5.88466 7.42172 5.81567 7.45317 5.73975C7.48462 5.66383 7.50081 5.58245 7.50081 5.50027C7.50081 5.41809 7.48462 5.33672 7.45317 5.26079C7.42172 5.18487 7.37563 5.11588 7.31752 5.05777C7.25941 4.99966 7.19042 4.95357 7.1145 4.92212C7.03857 4.89067 6.9572 4.87448 6.87502 4.87448C6.79284 4.87448 6.71146 4.89067 6.63554 4.92212C6.55961 4.95357 6.49063 4.99966 6.43252 5.05777L1.43252 10.0578C1.37431 10.1158 1.32814 10.1848 1.29663 10.2607C1.26512 10.3367 1.2489 10.4181 1.2489 10.5003C1.2489 10.5825 1.26512 10.6639 1.29663 10.7398C1.32814 10.8157 1.37431 10.8847 1.43252 10.9428L6.43252 15.9428C6.49063 16.0009 6.55961 16.047 6.63554 16.0784C6.71146 16.1099 6.79284 16.1261 6.87502 16.1261C6.9572 16.1261 7.03857 16.1099 7.1145 16.0784C7.19042 16.047 7.25941 16.0009 7.31752 15.9428C7.37563 15.8847 7.42172 15.8157 7.45317 15.7398C7.48462 15.6638 7.50081 15.5825 7.50081 15.5003C7.50081 15.4181 7.48462 15.3367 7.45317 15.2608C7.42172 15.1849 7.37563 15.1159 7.31752 15.0578L3.38377 11.1253H18.125C18.2908 11.1253 18.4497 11.0594 18.567 10.9422C18.6842 10.825 18.75 10.666 18.75 10.5003Z"/>
+                        </svg>
+                    </button>
+                    <button class="home-first-hero_navigation-btn home-first_navigation-next">
+                        <svg height="20px" viewBox="0 0 20 21" fill="#00465F">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 10.5003C1.25 10.3345 1.31585 10.1755 1.43306 10.0583C1.55027 9.94112 1.70924 9.87527 1.875 9.87527H16.6163L12.6825 5.94277C12.5651 5.82541 12.4992 5.66624 12.4992 5.50027C12.4992 5.3343 12.5651 5.17513 12.6825 5.05777C12.7999 4.94041 12.959 4.87448 13.125 4.87448C13.291 4.87448 13.4501 4.94041 13.5675 5.05777L18.5675 10.0578C18.6257 10.1158 18.6719 10.1848 18.7034 10.2607C18.7349 10.3367 18.7511 10.4181 18.7511 10.5003C18.7511 10.5825 18.7349 10.6639 18.7034 10.7398C18.6719 10.8157 18.6257 10.8847 18.5675 10.9428L13.5675 15.9428C13.4501 16.0601 13.291 16.1261 13.125 16.1261C12.959 16.1261 12.7999 16.0601 12.6825 15.9428C12.5651 15.8254 12.4992 15.6662 12.4992 15.5003C12.4992 15.3343 12.5651 15.1751 12.6825 15.0578L16.6163 11.1253H1.875C1.70924 11.1253 1.55027 11.0594 1.43306 10.9422C1.31585 10.825 1.25 10.666 1.25 10.5003Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="home-first-hero_imgs">
+                <div class="swiper home-first-hero_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://nure.ua/wp-content/uploads/the_2022.png" alt="Times Higher Education World University Rankings"></div>
+                        <div class="swiper-slide"><img src="https://nure.ua/wp-content/uploads/the_2022.png" alt="Times Higher Education World University Rankings"></div>
+                        <div class="swiper-slide"><img src="https://nure.ua/wp-content/uploads/the_2022.png" alt="Times Higher Education World University Rankings"></div>
+                        <div class="swiper-slide"><img src="https://nure.ua/wp-content/uploads/the_2022.png" alt="Times Higher Education World University Rankings"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="useful-links container">
+        <nav class="useful-links-outside">
+            <ul>
+                <li>
+                    <a href="#" class="useful-links-outside_link">
+                        <svg viewBox="0 0 32 45" fill="white">
+                            <path d="m16 45 12.3-5.5c2.2-1 3.7-3.3 3.7-5.8V0H0v33.7c0 2.5 1.5 4.8 3.7 5.8L16 45zm0-.6L3.9 39.1c-2.2-1-3.4-3.2-3.4-5.4V.5h31v33.2c0 2.2-1.3 4.4-3.4 5.4L16 44.4zm0-2.4c.3-.6.7-1 1.2-1.3 2.1-1.5 3.5-3.9 4-6.5h6.5V5.8c-3.5 1.8-5.8 5.6-6.3 9.6l-1 8 .5-.1c1 0 2 1 2 2 0 .9-.7 1.7-1.6 1.9l-1.2.3c-2-3.7-3.1-7.4-3.1-11 0-3.2.5-6.5.5-9.8 0-1.5-.6-2.8-1.5-3.9-.9 1.1-1.5 2.4-1.5 3.9.1 3.3.5 6.5.5 9.8 0 3.6-1.1 7.3-3.1 11l-1.2-.3c-.9-.2-1.6-1-1.6-1.9 0-1 .9-2 2-2l.5.1-1-8c-.3-4-2.8-7.9-6.3-9.6v28.3h6.5c.5 2.7 2 5 4 6.5.5.5.9.9 1.2 1.4zM6.3 24.4V9.9c1.3 1.5 2.1 3.3 2.4 5.4l.8 6.5c-1 .6-1.7 1.5-2 2.5H6.3zm18.3 0c-.3-1.1-1-2-2-2.5l.8-6.5c.2-2 1.1-3.9 2.4-5.4v14.4h-1.2zm-8.6 5c-.6-.6-1.3-1.2-2.1-1.4.8-1.5 1.6-3.2 2.1-4.9.5 1.7 1.3 3.3 2.1 4.9-.8.2-1.5.8-2.1 1.4zm-9.7 2.8v-5.8h1.1c.3 1.3 1.4 2.4 2.7 2.8l.9.2c-.2.9-.3 1.8-.3 2.8H6.3zm15 0c0-1-.1-1.9-.3-2.8l.9-.2c1.3-.4 2.4-1.5 2.7-2.8h1.1v5.8h-4.4zm-8.7 0c0-.8.1-1.6.3-2.4 1.2.1 2.1 1.2 2.1 2.4h-2.4zm4.4 0c0-1.2.9-2.3 2.1-2.4.2.8.3 1.5.3 2.4H17zm-2 6.1c-1-1.2-1.8-2.6-2.2-4.2H15v4.2zm2 0v-4.2h2.2c-.4 1.6-1.2 3-2.2 4.2z"/>
+                        </svg>
+                        <span class="useful-links-outside_text">Міністерство освіти і науки України</span>
+                    </a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#" class="useful-links-outside_link">
+                        <img src="img/naziavo.png" alt="Національне агентство із забезпечення якості вищої освіти">
+                        <span class="useful-links-outside_text">Національне агентство із забезпечення якості вищої освіти</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="useful-links-inside">
+            <ul>
+                <li>
+                    <a href="#" class="link link-outline link-thintext">
+                        <span class="material-icons-outlined">tour</span>
+                        <span class="link-text">Віртуальний тур по ХНУРЕ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link link-outline link-thintext">
+                        <span class="material-icons-outlined">flag</span>
+                        <span class="link-text">Вступна кампанія 2021</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link link-outline link-thintext">
+                        <span class="material-icons-outlined">date_range</span>
+                        <span class="link-text">Онлайн-розклад занять</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link link-outline link-thintext">
+                        <span class="material-icons-outlined">star_outline</span>
+                        <span class="link-text">Стипендіальний рейтинг</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link link-outline link-thintext">
+                        <span class="material-icons-outlined">library_books</span>
+                        <span class="link-text">Дистанційна освіта</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link link-outline link-thintext">
+                        <span class="material-icons-outlined">book</span>
+                        <span class="link-text">Наукова бібліотека</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link link-outline link-thintext">
+                        <span class="material-icons-outlined">computer</span>
+                        <span class="link-text">IT-простір NURE</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <hr class="bordered">
+    <section class="news padding">
+        <div class="container">
+            <h2 class="heading">
+                <a href="#" class="heading_link">
+                    <span class="heading_link-text">Новини</span>
+                    <span class="material-icons-outlined">arrow_right_alt</span>
+                </a>
+            </h2>
+            <div class="news-grid">
+                <a href="#" class="block news-item">
+                    <img class="block-img" src="https://nure.ua/wp-content/uploads/unnamed-17-1.jpg" alt="">
+                    <div class="block-info news-item_info">
+                        <span class="news-item_time">
+                            <span class="material-icons-outlined">schedule</span>
+                            <time datetime="">2021.08.05</time>
+                        </span>                    
+                        <h3 class="news-item_title">Шановні співробітники, студенти!</h3>
+                        <blockquote class="news-item_description">З метою здійснення масової вакцинації населення та...</blockquote>
+                    </div>
+                </a>
+                <a href="#" class="block news-item">
+                    <img class="block-img" src="https://nure.ua/wp-content/uploads/img_8241-1-1024x683.jpg" alt="">
+                    <div class="block-info news-item_info">
+                        <span class="news-item_time">
+                            <span class="material-icons-outlined">schedule</span>
+                            <time datetime="">2021.08.05</time>
+                        </span>                    
+                        <h3 class="news-item_title">У ХНУРЕ відзначили День кіберполіції</h3>
+                        <blockquote class="news-item_description">30 липня у Харківському національному університеті радіоелектроніки, на базі наукового парку Синергія</blockquote>
+                    </div>
+                </a>
+                <a href="#" class="block news-item">
+                    <img class="block-img" src="https://nure.ua/wp-content/uploads/1-70-768x1024.jpg" alt="">
+                    <div class="block-info news-item_info">
+                        <span class="news-item_time">
+                            <span class="material-icons-outlined">schedule</span>
+                            <time datetime="">2021.08.05</time>
+                        </span>                    
+                        <h3 class="news-item_title">У ХНУРЕ завершився черговий курс з вивчення французської мови</h3>
+                        <blockquote class="news-item_description">В рамках Угоди про співпрацю між Харківським національним університетом радіоелектроніки та громадською органцізацією «Альянс Франсез м. Харкова»</blockquote>
+                    </div>
+                </a>
+                <a href="#" class="block news-item">
+                    <img class="block-img" src="https://nure.ua/wp-content/uploads/aea1a9f68bc82287e4e24455d61ba7241.jpg" alt="">
+                    <div class="block-info news-item_info">
+                        <span class="news-item_time">
+                            <span class="material-icons-outlined">schedule</span>
+                            <time datetime="">2021.08.05</time>
+                        </span>                    
+                        <h3 class="news-item_title">Webometrics Ranking of World’s Universities опублікував рейтинг</h3>
+                        <blockquote class="news-item_description">За результатами липневого випуску Лабораторії кіберметрики («CybermetricsLab»)  Харківський національний університет радіоелектроніки зберіг 9 місце серед 315 українських ЗВО.</blockquote>
+                    </div>
+                </a>
+                <a href="#" class="block news-item">
+                    <img class="block-img" src="https://nure.ua/wp-content/uploads/poster-1-724x1024.png" alt="">
+                    <div class="block-info news-item_info">
+                        <span class="news-item_time">
+                            <span class="material-icons-outlined">schedule</span>
+                            <time datetime="">2021.08.05</time>
+                        </span>                    
+                        <h3 class="news-item_title">Стартував набір учасників до Німецько-Українських осінніх шкіл ДААД 2021</h3>
+                        <blockquote class="news-item_description">Запрошуємо високомотивованих аспірантів та молодих дослідників, які мають досвід у галузі наук про життя чи комп’ютерних наук, взяти участь у Німецько-Українських осінніх школах ДААД 2021. Термін подання sdkfkdsf dsfjd kjsdfdns </blockquote>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <hr class="bordered">
+    <section class="partners padding">
+        <div class="container">
+            <h2 class="heading">
+                <span class="heading_link-text">Партнери</span>
+            </h2>
+            <div class="partners-slider">
+                <button class="partners-slider_navigation-btn partners-slider_navigation-previous">
+                    <svg height="20px" viewBox="0 0 20 21" fill="#00465F" >
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 10.5003C18.75 10.3345 18.6842 10.1755 18.567 10.0583C18.4497 9.94112 18.2908 9.87527 18.125 9.87527H3.38377L7.31752 5.94277C7.37563 5.88466 7.42172 5.81567 7.45317 5.73975C7.48462 5.66383 7.50081 5.58245 7.50081 5.50027C7.50081 5.41809 7.48462 5.33672 7.45317 5.26079C7.42172 5.18487 7.37563 5.11588 7.31752 5.05777C7.25941 4.99966 7.19042 4.95357 7.1145 4.92212C7.03857 4.89067 6.9572 4.87448 6.87502 4.87448C6.79284 4.87448 6.71146 4.89067 6.63554 4.92212C6.55961 4.95357 6.49063 4.99966 6.43252 5.05777L1.43252 10.0578C1.37431 10.1158 1.32814 10.1848 1.29663 10.2607C1.26512 10.3367 1.2489 10.4181 1.2489 10.5003C1.2489 10.5825 1.26512 10.6639 1.29663 10.7398C1.32814 10.8157 1.37431 10.8847 1.43252 10.9428L6.43252 15.9428C6.49063 16.0009 6.55961 16.047 6.63554 16.0784C6.71146 16.1099 6.79284 16.1261 6.87502 16.1261C6.9572 16.1261 7.03857 16.1099 7.1145 16.0784C7.19042 16.047 7.25941 16.0009 7.31752 15.9428C7.37563 15.8847 7.42172 15.8157 7.45317 15.7398C7.48462 15.6638 7.50081 15.5825 7.50081 15.5003C7.50081 15.4181 7.48462 15.3367 7.45317 15.2608C7.42172 15.1849 7.37563 15.1159 7.31752 15.0578L3.38377 11.1253H18.125C18.2908 11.1253 18.4497 11.0594 18.567 10.9422C18.6842 10.825 18.75 10.666 18.75 10.5003Z"/>
+                    </svg>
+                </button>
+                <div class="swiper partners-slider_container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide partners-slider_element">
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 4.png" alt="" class="partners-slider_element-img">
+                            </a>
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 8.png" alt="" class="partners-slider_element-img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide partners-slider_element">
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 9.png" alt="" class="partners-slider_element-img">
+                            </a>
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 10.png" alt="" class="partners-slider_element-img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide partners-slider_element">
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/microsoft.svg" alt="" class="partners-slider_element-img">
+                            </a>
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 37.png" alt="" class="partners-slider_element-img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide partners-slider_element">
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 38.png" alt="" class="partners-slider_element-img">
+                            </a>
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 39.png" alt="" class="partners-slider_element-img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide partners-slider_element">
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 4.png" alt="" class="partners-slider_element-img">
+                            </a>
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 8.png" alt="" class="partners-slider_element-img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide partners-slider_element">
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 9.png" alt="" class="partners-slider_element-img">
+                            </a>
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 10.png" alt="" class="partners-slider_element-img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide partners-slider_element">
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/microsoft.svg" alt="" class="partners-slider_element-img">
+                            </a>
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 37.png" alt="" class="partners-slider_element-img">
+                            </a>
+                        </div>
+                        <div class="swiper-slide partners-slider_element">
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 38.png" alt="" class="partners-slider_element-img">
+                            </a>
+                            <a href="#" class="partners-slider_element-link">
+                                <img src="img/image 39.png" alt="" class="partners-slider_element-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="partners-slider_navigation-btn partners-slider_navigation-next">
+                    <svg height="20px" viewBox="0 0 20 21" fill="#00465F">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.25 10.5003C1.25 10.3345 1.31585 10.1755 1.43306 10.0583C1.55027 9.94112 1.70924 9.87527 1.875 9.87527H16.6163L12.6825 5.94277C12.5651 5.82541 12.4992 5.66624 12.4992 5.50027C12.4992 5.3343 12.5651 5.17513 12.6825 5.05777C12.7999 4.94041 12.959 4.87448 13.125 4.87448C13.291 4.87448 13.4501 4.94041 13.5675 5.05777L18.5675 10.0578C18.6257 10.1158 18.6719 10.1848 18.7034 10.2607C18.7349 10.3367 18.7511 10.4181 18.7511 10.5003C18.7511 10.5825 18.7349 10.6639 18.7034 10.7398C18.6719 10.8157 18.6257 10.8847 18.5675 10.9428L13.5675 15.9428C13.4501 16.0601 13.291 16.1261 13.125 16.1261C12.959 16.1261 12.7999 16.0601 12.6825 15.9428C12.5651 15.8254 12.4992 15.6662 12.4992 15.5003C12.4992 15.3343 12.5651 15.1751 12.6825 15.0578L16.6163 11.1253H1.875C1.70924 11.1253 1.55027 11.0594 1.43306 10.9422C1.31585 10.825 1.25 10.666 1.25 10.5003Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-container">
+            <nav class="footer-top">
+                <a href="#" class="footer-logo logo">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="white" >
+                        <path d="M25.0425 0.000525498C11.28 -0.023012 0.0608318 11.121 0.000245597 24.8777C-0.0603406 38.6902 11.0963 49.9445 24.9079 50.0003C38.7195 50.0561 49.9684 38.8711 50 25.07C50.0323 11.2575 38.8508 0.024063 25.0425 0.000525498ZM16.1566 44.0291C4.94004 38.7957 1.5351 25.9591 5.73641 16.8292H12.5355L17.1233 23.38L7.93502 36.5113H42.3668C38.3466 43.586 27.0944 49.1341 16.1566 44.0291ZM16.0051 32.4823L19.7419 27.14L21.7352 29.9645H36.4166C40.3257 29.9591 43.3759 27.417 44.0235 23.6309C44.7593 19.3363 41.4594 15.1634 37.0602 15.0477C32.6172 14.9314 28.1742 15.0188 23.7312 15.0168H22.9893C21.921 16.5313 20.8688 18.0303 19.7332 19.6375L14.9044 12.7579H8.13091C12.2447 6.16467 23.1267 1.00928 33.7535 5.92458C45.0414 11.1439 48.241 23.7297 44.5392 32.4823H16.0051ZM22.3586 23.4036L25.4357 19.0135C29.2277 19.0135 32.9753 18.9664 36.7195 19.033C38.7101 19.0679 40.1487 20.647 40.1177 22.5266C40.0868 24.3955 38.6724 25.8831 36.7269 25.9046C32.597 25.949 28.4663 25.9113 24.3364 25.9046C24.2691 25.9046 24.2017 25.8662 24.0563 25.8205C23.54 25.0848 22.9846 24.2953 22.3586 23.4036Z"/>
+                    </svg>
+                    <div class="logo_text">
+                        <span class="logo_text-top">ХНУРЕ</span>
+                        <span class="logo_text-bottom">Харківський національний університет радіоелектроніки</span>
+                    </div>
+                </a>
+                <ul class="footer-nav">
+                    <li><a href="#">Університет</a></li>
+                    <li><a href="#">Абітурієнтам</a></li>
+                    <li><a href="#">Студентам</a></li>
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Освіта</a></li>
+                    <li><a href="#">Прес-центр</a></li>
+                </ul>
+            </nav>
+            <div class="footer-bottom">
+                <ul class="footer-socials">
+                    <li class="footer-socials_item"><a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="white">
+                            <g clip-path="url(#clip0)">
+                            <path d="M40 20.123C40 9.00805 31.045 -0.00195312 20 -0.00195312C8.94999 0.000546875 -0.00500488 9.00805 -0.00500488 20.1255C-0.00500488 30.168 7.31 38.493 16.87 40.003V25.9405H11.795V20.1255H16.875V15.688C16.875 10.6455 19.8625 7.86055 24.43 7.86055C26.62 7.86055 28.9075 8.25305 28.9075 8.25305V13.203H26.385C23.9025 13.203 23.1275 14.7555 23.1275 16.348V20.123H28.6725L27.7875 25.938H23.125V40.0005C32.685 38.4905 40 30.1655 40 20.123Z"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                                <rect width="40" height="40" fill="white" transform="translate(0 0.000488281)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a></li>
+                    <li class="footer-socials_item"><a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path d="M20 0.000488281C14.5725 0.000488281 13.89 0.0254883 11.7575 0.120488C9.625 0.220488 8.1725 0.555488 6.9 1.05049C5.56523 1.55254 4.35623 2.34005 3.3575 3.35799C2.34019 4.35723 1.55277 5.56609 1.05 6.90049C0.555 8.17049 0.2175 9.62549 0.12 11.7505C0.025 13.888 0 14.568 0 20.003C0 25.433 0.025 26.113 0.12 28.2455C0.22 30.3755 0.555 31.828 1.05 33.1005C1.5625 34.4155 2.245 35.5305 3.3575 36.643C4.4675 37.7555 5.5825 38.4405 6.8975 38.9505C8.1725 39.4455 9.6225 39.783 11.7525 39.8805C13.8875 39.9755 14.5675 40.0005 20 40.0005C25.4325 40.0005 26.11 39.9755 28.245 39.8805C30.3725 39.7805 31.83 39.4455 33.1025 38.9505C34.4364 38.4482 35.6445 37.6607 36.6425 36.643C37.755 35.5305 38.4375 34.4155 38.95 33.1005C39.4425 31.828 39.78 30.3755 39.88 28.2455C39.975 26.113 40 25.433 40 20.0005C40 14.568 39.975 13.888 39.88 11.753C39.78 9.62549 39.4425 8.17049 38.95 6.90049C38.4473 5.56605 37.6599 4.35718 36.6425 3.35799C35.6441 2.33968 34.435 1.5521 33.1 1.05049C31.825 0.555488 30.37 0.217988 28.2425 0.120488C26.1075 0.0254883 25.43 0.000488281 19.995 0.000488281H20.0025H20ZM18.2075 3.60549H20.0025C25.3425 3.60549 25.975 3.62299 28.0825 3.72049C30.0325 3.80799 31.0925 4.13549 31.7975 4.40799C32.73 4.77049 33.3975 5.20549 34.0975 5.90549C34.7975 6.60549 35.23 7.27049 35.5925 8.20549C35.8675 8.90799 36.1925 9.96799 36.28 11.918C36.3775 14.0255 36.3975 14.658 36.3975 19.9955C36.3975 25.333 36.3775 25.968 36.28 28.0755C36.1925 30.0255 35.865 31.083 35.5925 31.788C35.2719 32.6564 34.7601 33.4416 34.095 34.0855C33.395 34.7855 32.73 35.218 31.795 35.5805C31.095 35.8555 30.035 36.1805 28.0825 36.2705C25.975 36.3655 25.3425 36.388 20.0025 36.388C14.6625 36.388 14.0275 36.3655 11.92 36.2705C9.97 36.1805 8.9125 35.8555 8.2075 35.5805C7.33875 35.2603 6.55281 34.7494 5.9075 34.0855C5.24188 33.4406 4.72931 32.6546 4.4075 31.7855C4.135 31.083 3.8075 30.023 3.72 28.073C3.625 25.9655 3.605 25.333 3.605 19.9905C3.605 14.6505 3.625 14.0205 3.72 11.913C3.81 9.96299 4.135 8.90299 4.41 8.19799C4.7725 7.26549 5.2075 6.59799 5.9075 5.89799C6.6075 5.19799 7.2725 4.76549 8.2075 4.40299C8.9125 4.12799 9.97 3.80299 11.92 3.71299C13.765 3.62799 14.48 3.60299 18.2075 3.60049V3.60549V3.60549ZM30.6775 6.92549C30.3623 6.92549 30.0502 6.98757 29.7591 7.10818C29.4679 7.22879 29.2033 7.40557 28.9804 7.62843C28.7576 7.85129 28.5808 8.11587 28.4602 8.40705C28.3396 8.69823 28.2775 9.01032 28.2775 9.32549C28.2775 9.64066 28.3396 9.95275 28.4602 10.2439C28.5808 10.5351 28.7576 10.7997 28.9804 11.0225C29.2033 11.2454 29.4679 11.4222 29.7591 11.5428C30.0502 11.6634 30.3623 11.7255 30.6775 11.7255C31.314 11.7255 31.9245 11.4726 32.3746 11.0225C32.8246 10.5725 33.0775 9.96201 33.0775 9.32549C33.0775 8.68897 32.8246 8.07852 32.3746 7.62843C31.9245 7.17834 31.314 6.92549 30.6775 6.92549V6.92549ZM20.0025 9.73049C18.6402 9.70923 17.2872 9.9592 16.0224 10.4658C14.7577 10.9725 13.6063 11.7257 12.6354 12.6815C11.6645 13.6374 10.8934 14.7769 10.3671 16.0336C9.8408 17.2904 9.56975 18.6392 9.56975 20.0017C9.56975 21.3642 9.8408 22.7131 10.3671 23.9698C10.8934 25.2266 11.6645 26.366 12.6354 27.3219C13.6063 28.2778 14.7577 29.031 16.0224 29.5376C17.2872 30.0443 18.6402 30.2942 20.0025 30.273C22.6989 30.2309 25.2705 29.1303 27.1624 27.2086C29.0544 25.287 30.1148 22.6984 30.1148 20.0017C30.1148 17.3051 29.0544 14.7165 27.1624 12.7949C25.2705 10.8732 22.6989 9.77256 20.0025 9.73049V9.73049ZM20.0025 13.333C21.7708 13.333 23.4667 14.0355 24.7171 15.2859C25.9675 16.5363 26.67 18.2322 26.67 20.0005C26.67 21.7688 25.9675 23.4647 24.7171 24.7151C23.4667 25.9655 21.7708 26.668 20.0025 26.668C18.2342 26.668 16.5383 25.9655 15.2879 24.7151C14.0375 23.4647 13.335 21.7688 13.335 20.0005C13.335 18.2322 14.0375 16.5363 15.2879 15.2859C16.5383 14.0355 18.2342 13.333 20.0025 13.333V13.333Z"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="40" height="40" fill="white" transform="translate(0 0.000488281)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a></li>
+                    <li class="footer-socials_item"><a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path d="M20.1275 4.99805H20.35C22.405 5.00555 32.8175 5.08055 35.625 5.83555C36.4737 6.06597 37.2471 6.5151 37.8679 7.13807C38.4887 7.76103 38.9351 8.53601 39.1625 9.38555C39.415 10.3355 39.5925 11.593 39.7125 12.8905L39.7375 13.1505L39.7925 13.8005L39.8125 14.0605C39.975 16.3455 39.995 18.4855 39.9975 18.953V19.1405C39.995 19.6255 39.9725 21.9105 39.7925 24.2905L39.7725 24.553L39.75 24.813C39.625 26.243 39.44 27.663 39.1625 28.708C38.9358 29.5579 38.4896 30.3333 37.8687 30.9563C37.2478 31.5794 36.4741 32.0283 35.625 32.258C32.725 33.038 21.7025 33.093 20.175 33.0955H19.82C19.0475 33.0955 15.8525 33.0805 12.5025 32.9655L12.0775 32.9505L11.86 32.9405L11.4325 32.923L11.005 32.9055C8.23 32.783 5.5875 32.5855 4.37 32.2555C3.52122 32.026 2.74766 31.5775 2.12681 30.9549C1.50596 30.3323 1.05962 29.5575 0.8325 28.708C0.555 27.6655 0.37 26.243 0.245 24.813L0.225 24.5505L0.205 24.2905C0.081619 22.5965 0.0132497 20.899 0 19.2005L0 18.893C0.005 18.3555 0.025 16.498 0.16 14.448L0.1775 14.1905L0.185 14.0605L0.205 13.8005L0.26 13.1505L0.285 12.8905C0.405 11.593 0.5825 10.333 0.835 9.38555C1.06173 8.53567 1.50791 7.76032 2.12878 7.13725C2.74966 6.51418 3.52342 6.06528 4.3725 5.83555C5.59 5.51055 8.2325 5.31055 11.0075 5.18555L11.4325 5.16805L11.8625 5.15305L12.0775 5.14555L12.505 5.12805C14.8843 5.05148 17.2645 5.00898 19.645 5.00055H20.1275V4.99805ZM16 13.023V25.068L26.3925 19.048L16 13.023Z"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="40" height="40" fill="white" transform="translate(0 0.000488281)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a></li>
+                    <li class="footer-socials_item"><a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path d="M0 2.86549C0 1.28299 1.315 0.000488281 2.9375 0.000488281H37.0625C38.685 0.000488281 40 1.28299 40 2.86549V37.1355C40 38.718 38.685 40.0005 37.0625 40.0005H2.9375C1.315 40.0005 0 38.718 0 37.1355V2.86549ZM12.3575 33.4855V15.423H6.355V33.4855H12.3575ZM9.3575 12.9555C11.45 12.9555 12.7525 11.5705 12.7525 9.83549C12.715 8.06299 11.4525 6.71549 9.3975 6.71549C7.3425 6.71549 6 8.06549 6 9.83549C6 11.5705 7.3025 12.9555 9.3175 12.9555H9.3575V12.9555ZM21.6275 33.4855V23.398C21.6275 22.858 21.6675 22.318 21.8275 21.933C22.26 20.8555 23.2475 19.738 24.9075 19.738C27.08 19.738 27.9475 21.393 27.9475 23.823V33.4855H33.95V23.1255C33.95 17.5755 30.99 14.9955 27.04 14.9955C23.855 14.9955 22.4275 16.7455 21.6275 17.978V18.0405H21.5875C21.6008 18.0196 21.6141 17.9988 21.6275 17.978V15.423H15.6275C15.7025 17.118 15.6275 33.4855 15.6275 33.4855H21.6275Z"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="40" height="40" fill="white" transform="translate(0 0.000488281)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a></li>
+                    <li class="footer-socials_item"><a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                            <path d="M40 20.0005C40 25.3048 37.8929 30.3919 34.1421 34.1426C30.3914 37.8934 25.3043 40.0005 20 40.0005C14.6957 40.0005 9.60859 37.8934 5.85786 34.1426C2.10714 30.3919 0 25.3048 0 20.0005C0 14.6962 2.10714 9.60908 5.85786 5.85835C9.60859 2.10763 14.6957 0.000488281 20 0.000488281C25.3043 0.000488281 30.3914 2.10763 34.1421 5.85835C37.8929 9.60908 40 14.6962 40 20.0005V20.0005ZM20.7175 14.7655C18.7725 15.5755 14.8825 17.2505 9.0525 19.7905C8.1075 20.1655 7.61 20.5355 7.565 20.8955C7.49 21.503 8.2525 21.743 9.29 22.0705L9.7275 22.208C10.7475 22.5405 12.1225 22.928 12.835 22.943C13.485 22.958 14.2075 22.693 15.005 22.143C20.4525 18.4655 23.265 16.608 23.44 16.568C23.565 16.538 23.74 16.503 23.855 16.608C23.9725 16.7105 23.96 16.908 23.9475 16.9605C23.8725 17.283 20.88 20.063 19.3325 21.503C18.85 21.953 18.5075 22.2705 18.4375 22.343C18.2834 22.5005 18.1267 22.6555 17.9675 22.808C17.0175 23.723 16.3075 24.408 18.005 25.528C18.8225 26.068 19.4775 26.5105 20.13 26.9555C20.84 27.4405 21.55 27.923 22.47 28.528C22.7025 28.678 22.9275 28.8405 23.145 28.9955C23.9725 29.5855 24.72 30.1155 25.6375 30.0305C26.1725 29.9805 26.725 29.4805 27.005 27.9805C27.6675 24.438 28.97 16.7655 29.27 13.603C29.2883 13.3401 29.2774 13.076 29.2375 12.8155C29.214 12.6053 29.1122 12.4116 28.9525 12.273C28.725 12.116 28.4538 12.0346 28.1775 12.0405C27.4275 12.053 26.27 12.4555 20.7175 14.7655V14.7655Z"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="40" height="40" fill="white" transform="translate(0 0.000488281)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </a></li>
+                    <li class="footer-socials_item"><a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.565 37.5005C27.66 37.5005 35.9175 24.993 35.9175 14.1655C35.9175 13.8155 35.9175 13.4605 35.9025 13.1105C37.5101 11.9467 38.8977 10.5059 40 8.85551C38.4983 9.51764 36.9069 9.95403 35.2775 10.1505C36.9938 9.12461 38.2793 7.51043 38.895 5.60801C37.2825 6.56332 35.5175 7.23395 33.6775 7.59051C32.4405 6.27307 30.8035 5.40031 29.0202 5.10741C27.2369 4.81451 25.4068 5.11782 23.8133 5.97036C22.2199 6.82289 20.952 8.17708 20.2061 9.82316C19.4602 11.4692 19.2779 13.3153 19.6875 15.0755C16.4244 14.9119 13.232 14.0642 10.3176 12.5874C7.40317 11.1106 4.83171 9.03762 2.77 6.50301C1.72335 8.31072 1.40393 10.449 1.87662 12.4837C2.3493 14.5183 3.57864 16.2968 5.315 17.458C4.01385 17.4138 2.7413 17.0644 1.6 16.438V16.5505C1.60224 18.4442 2.25827 20.2791 3.45718 21.7449C4.6561 23.2108 6.32437 24.2177 8.18 24.5955C7.47566 24.7895 6.74807 24.8863 6.0175 24.883C5.50246 24.8846 4.98845 24.8369 4.4825 24.7405C5.00697 26.3707 6.02818 27.7959 7.40312 28.8167C8.77805 29.8375 10.4378 30.4026 12.15 30.433C9.24139 32.7175 5.6485 33.9565 1.95 33.9505C1.2983 33.9533 0.647058 33.9157 0 33.838C3.75379 36.2312 8.11324 37.5019 12.565 37.5005V37.5005Z"/>
+                        </svg>
+                    </a></li>
+                </ul>
+                <div class="footer-info">
+                    <ul class="footer-outer-links">
+                        <li class="footer-outer-links_item"><a href="#" class="footer-outer-links_link"><img src="img/mon_logo.png" alt=""></a></li>
+                        <li class="footer-outer-links_item"><a href="#" class="footer-outer-links_link"><img src="img/raiting.png" alt=""></a></li>
+                    </ul>
+                    <p class="footer-copyrights">
+                        м. Харків, пр. Науки, 14<br>© ХНУРЕ, 2001—2021, Усі права захищені
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
